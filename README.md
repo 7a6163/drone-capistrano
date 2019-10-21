@@ -13,7 +13,7 @@ clone:
 
 steps:
 - name: deployment
-  image: mymengyu/drone-capistrano
+  image: 7a6163/drone-capistrano
   environment:
     SSH_KEY:
       from_secret: SSH_KEY
