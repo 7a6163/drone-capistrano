@@ -1,7 +1,7 @@
 FROM ruby:2.6.6-alpine
 LABEL maintainer="Zac"
 
-RUN apk add --no-cache bash openssh-client build-base && \
+RUN apk add --no-cache bash openssh-client build-base rsync && \
     gem install capistrano:3.15.0 \
                 capistrano-bundler:2.0.1 \
                 capistrano-passenger:0.2.0 \
@@ -15,3 +15,4 @@ RUN apk add --no-cache bash openssh-client build-base && \
 
 WORKDIR /app
 CMD ["/bin/bash"]
+
