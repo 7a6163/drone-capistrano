@@ -1,10 +1,11 @@
-FROM ruby:2.6.6-alpine
+FROM ruby:2.7-alpine
 LABEL maintainer="Zac"
 
 RUN apk add --no-cache bash openssh-client build-base rsync && \
     gem install capistrano:3.16.0 \
                 capistrano-bundler:2.0.1 \
                 capistrano-passenger:0.2.0 \
+                capistrano3-puma:5.0.4 \
                 capistrano-rails:1.6.1 \
                 capistrano-rvm:0.1.2 \
                 capose:0.2.0 \
@@ -15,4 +16,3 @@ RUN apk add --no-cache bash openssh-client build-base rsync && \
 
 WORKDIR /app
 CMD ["/bin/bash"]
-
