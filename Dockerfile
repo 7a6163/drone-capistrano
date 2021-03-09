@@ -12,6 +12,7 @@ RUN apk add --no-cache bash openssh-client build-base rsync && \
                 capistrano-resque:0.2.3 \
                 capistrano-rvm:0.1.2 \
                 capose:0.2.0 \
+                whenever:1.0.0 \
                 ed25519:1.2.4 \
                 bcrypt_pbkdf:1.1.0 && \
     mkdir -p /root/.ssh/ && \
