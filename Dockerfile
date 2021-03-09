@@ -8,6 +8,7 @@ RUN apk add --no-cache bash openssh-client build-base rsync && \
                 capistrano-passenger:0.2.0 \
                 capistrano3-puma:5.0.4 \
                 capistrano-rails:1.6.1 \
+                capistrano-resque:0.2.3 \
                 capistrano-rvm:0.1.2 \
                 capose:0.2.0 \
                 ed25519:1.2.4 \
