@@ -2,8 +2,8 @@ FROM ruby:2.7-alpine
 LABEL maintainer="Zac"
 
 RUN apk add --no-cache bash openssh-client build-base rsync && \
-    gem install bundler:2.2.13 \
-                capistrano:3.16.0 \
+    gem install bundler:2.2.14 \
+                capistrano:3.11.2 \
                 capistrano-bundler:2.0.1 \
                 capistrano-local-precompile:1.2.0 \
                 capistrano-passenger:0.2.0 \
@@ -12,6 +12,7 @@ RUN apk add --no-cache bash openssh-client build-base rsync && \
                 capistrano-resque:0.2.3 \
                 capistrano-rvm:0.1.2 \
                 capose:0.2.0 \
+                rollbar:3.1.2 \
                 whenever:1.0.0 \
                 ed25519:1.2.4 \
                 bcrypt_pbkdf:1.1.0 && \
