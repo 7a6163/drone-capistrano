@@ -11,10 +11,11 @@ RUN apk add --no-cache bash openssh-client build-base rsync && \
                 capistrano-rails:1.6.1 \
                 capistrano-resque:0.2.3 \
                 capistrano-rvm:0.1.2 \
-                capose:0.2.0 \
                 whenever:1.0.0 \
                 ed25519:1.2.4 \
+                specific_install \
                 bcrypt_pbkdf:1.1.0 && \
+    gem specific_install -l https://github.com/7a6163/capose.git && \
     mkdir -p /root/.ssh/ && \
     echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
 
