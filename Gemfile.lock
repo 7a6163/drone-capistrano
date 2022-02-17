@@ -70,6 +70,7 @@ GEM
       redis (>= 3.3)
       resque (>= 1.27)
       rufus-scheduler (~> 3.2, < 3.7)
+    rollbar (3.3.0)
     ruby2_keywords (0.0.5)
     rufus-scheduler (3.6.0)
       fugit (~> 1.1, >= 1.1.6)
@@ -104,6 +105,7 @@ DEPENDENCIES
   capistrano3-puma (~> 5.0.4)
   capose (~> 0.2.0)
   ed25519 (~> 1.2.4)
+  rollbar (~> 3.3)
   whenever (~> 1.0.0)
 
 BUNDLED WITH
