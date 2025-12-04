@@ -1,8 +1,8 @@
-FROM ruby:2.7-alpine
+FROM ruby:3.3-alpine
 
 RUN apk add --no-cache bash build-base git openssh-client tini
 WORKDIR /app
-RUN gem install bundler:2.3.12
+RUN gem install bundler:4.0.0
 
 ADD Gemfile Gemfile.lock /app/
 RUN bundle install -j4
